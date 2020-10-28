@@ -37,6 +37,10 @@
     font-style: normal;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+.codetext:hover {
+    transform: scale(0.7);
+
+}
 
 .commented{
     visibility: hidden;
@@ -72,6 +76,8 @@
     margin-bottom: -100%;
     float: left;
 }
+
+
 .secondblock{
     position: absolute;
     overflow: auto;
