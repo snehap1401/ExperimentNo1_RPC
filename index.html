@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <script src="js/index.js"></script>
+    
+
+    <title>RPC</title>
+</head>
+
+<body style="background-color:white;width: 100%; overflow: auto;">
+<center>
+<div class="header1" style="font-weight: bold;color:white;font-family: Arial, Helvetica, sans-serif; background-color:#303030">Remote Procedure Call</div>
+</center>
+<br><br>
+<div class="btn">
+    <button onclick="startRpc();" id="startbtn"; style="margin-left:5%; max-width:40%;font-size:2vw;color:#FFD700; background-color: #303030;"><b>Start</b></button>
+    <button id="resetbtn" style="margin-left:20%; max-width:40%;font-size:2vw;background-color:#303030"><a href="index.html" style="color:#FFD700;text-decoration:none"><b>Reset</b></a></button>   
+</div>
+
+<div class="firstblock">
+    <div id="commented">
+
+    <div class="codetext">
+    <div id="line1" style="color:cornsilk; font-style: italic; size: 1em;"><center>/*This is IDL File (add.x)*/</center></div><br>
+    <div id="line2" style="margin-left: 5%;">struct numbers{</div>
+        <div class="codeComments" id="line2comment" style="margin-left:30%">stucture which sends parameters to server</div>
+        <br>
+
+    <div id="line3" style="margin-left: 20%;">int a;</div>   
+    <div id="line4" style="margin-left: 20%;">int b;</div><br> 
+    <div style="margin-left:5%;" id="line5">};</div> <br><br> 
+    <div id="line6" style="margin-left: 5%;">program ADD_PROG{</div>
+        <div class="codeComments" id="line5comment" style="margin-left: 35%;">name of the program</div>
+        <br>
+
+    <div id="line7" style="margin-left: 15%;">version ADD_VERS{</div>   
+        <div class="codeComments" id="line6comment" style="margin-left: 40%";>name of the program version</div>
+
+        <br>
+    <div id="line8" style="margin-left: 20%;">int add(numbers)=1;</div>
+           <div class="codeComments" id="line7comment" style="margin-left: 45%;">Remote method</div>
+    <br>
+    <div id="line9" style="margin-left: 15%;">}=1;</div>
+    <div class="codeComments" id="line9comment" style="margin-left: 45%;">Version Number</div>
+
+    <br>
+    <div id="line10" style="margin-left: 5%;">}=0x4562877;</div>
+    <div class="codeComments" id="line10comment" style="margin-left: 45%;">Program Number</div>
+
+    <br><br>
+    <div id="line11">
+        <input type="text" id="line12" placeholder="Enter commannd" style="margin-left:15%; width:35%;height:1.5vw;font-size:1.2vw; border-radius: 100px;">
+        <button onclick="executeCmd()"  id="executeCmd"  style="margin-left:5%; max-width:50%;font-size:1.2vw; border-radius: 100px;color:#FFD700; background-color: #303030;">Execute</button>
+    </div>
+
+</div>
+</div>
+</div>
+
+<!--<div class="secondblock"></div>-->
+</body>
+</html>
